@@ -1,13 +1,8 @@
 <template>
   <div
     id="details-section"
-    class="home-section d-flex flex-column justify-content-center"
+    class="home-section d-flex flex-column justify-content-center separator"
   >
-    <StepBackButton
-      v-bind:to="prev"
-      v-on:skipTo="(elId) => $emit('skipTo', elId)"
-    />
-
     <div>
       <h1>
         I ❤️ to create and deliver beautiful code everywhere from
@@ -17,7 +12,6 @@
           target="blank"
           >Mallorca</a
         >
-        ⛱️
       </h1>
       <div class="mt-5 mb-5">
         <TechStack />
@@ -32,13 +26,11 @@
 </template>
 
 <script>
-import StepBackButton from "../components/home/StepBackButton";
 import TechStack from "../components/home/TechStack";
 
 export default {
   name: "DetailsSection",
   components: {
-    StepBackButton,
     TechStack,
   },
   props: {

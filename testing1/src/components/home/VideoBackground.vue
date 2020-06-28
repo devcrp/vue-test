@@ -1,7 +1,7 @@
 <template>
   <div>
     <video autoplay muted loop id="background-video">
-      <source src="../../assets/background.mp4" type="video/mp4" />
+      <slot />
     </video>
     <div id="overlay"></div>
   </div>
@@ -20,9 +20,8 @@ export default {
   left: 0;
   height: 100vh;
   width: 100%;
-  z-index: -1;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.7;
 }
 #background-video {
   position: fixed;

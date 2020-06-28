@@ -1,13 +1,13 @@
 <template>
   <div
     id="projects-section"
-    class="home-section d-flex flex-column justify-content-center"
+    class="home-section d-flex flex-column justify-content-center separator"
   >
     <StepBackButton
       v-bind:to="prev"
       v-on:skipTo="(elId) => $emit('skipTo', elId)"
     />
-    <h1>Projects</h1>
+    <h1>Lately I've been working on</h1>
   </div>
 </template>
 

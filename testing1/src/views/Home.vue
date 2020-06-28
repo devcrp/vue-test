@@ -1,6 +1,8 @@
 <template>
   <div class="home px-5">
-    <VideoBackground />
+    <VideoBackground>
+      <source src="../assets/home.mp4" type="video/mp4" />
+    </VideoBackground>
     <Navigator />
 
     <WelcomeSection v-on:skipTo="onSkipSection" next="details-section" />
@@ -42,5 +44,11 @@ export default {
 .home-section {
   height: 100vh;
   position: relative;
+}
+.home-section.separator {
+  border-top: 1px solid white;
+}
+body {
+  /* overflow: hidden; */
 }
 </style>
