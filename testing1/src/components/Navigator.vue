@@ -8,16 +8,17 @@
       v-bind:class="{ highlight: scrollPosition === section.index }"
       variant="outline-light"
       size="sm"
-      ><i class="mr-2" v-bind:class="section.icon"></i
-      >{{ section.text }}</b-button
     >
+      <i class="mr-2" v-bind:class="section.icon"></i>
+      {{ section.text }}
+    </b-button>
     <!-- <b-button
       class="my-1 border-0"
       variant="outline-light"
       size="sm"
       v-bind:class="{ highlight: scrollPosition === 1 }"
       >details</b-button
-    > -->
+    >-->
   </div>
 </template>
 
@@ -37,21 +38,21 @@ export default {
           id: "welcome-section",
           icon: "far fa-play-circle",
           text: "welcome",
-          index: 0,
+          index: 0
         },
         {
           id: "details-section",
           icon: "fas fa-qrcode",
           text: "details",
-          index: 1,
+          index: 1
         },
         {
           id: "projects-section",
           icon: "fas fa-laptop-code",
           text: "projects",
-          index: 2,
-        },
-      ],
+          index: 2
+        }
+      ]
     };
   },
   methods: {
@@ -67,8 +68,8 @@ export default {
         console.log(this.scrollPosition);
         this.scrollPosition = sectionPos;
       }
-    },
-  },
+    }
+  }
 };
 </script>
 
