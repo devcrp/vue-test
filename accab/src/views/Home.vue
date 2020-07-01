@@ -1,48 +1,34 @@
 <template>
   <div class="home">
-    <Background />
-    <div class="content">
-      <h1>
-        Estamos para
-        <span class="highlight">ayudarte</span>
-      </h1>
-    </div>
-    <div class="panel">
-      <h2>novedades</h2>
-    </div>
+    <Header />
+
+    <WhoWeAre />
+
+    <Events />
+
+    <Team />
   </div>
 </template>
 
 <script>
-import Background from "../components/home/Background";
+import Header from "../components/home/Header";
+import Events from "../components/home/Events";
+import WhoWeAre from "../components/home/WhoWeAre";
+import Team from "../components/home/Team";
 
 export default {
   name: "Home",
   components: {
-    Background
+    Header,
+    Events,
+    WhoWeAre,
+    Team
   }
 };
 </script>
 
-<style scoped>
-.content {
-  padding-top: 175px;
-  margin-bottom: 250px;
-}
-h1 {
-  color: white;
-  font-size: 4rem;
-}
+<style>
 h2 {
-  text-align: left;
-  font-weight: bold;
-}
-.panel {
-  padding: 20px;
-  width: 100%;
-  max-width: 1024px;
-  background-color: white;
-  margin: auto;
-  height: 800px;
+  text-align: center;
 }
 </style>
